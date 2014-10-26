@@ -12,4 +12,26 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require jquery.easing.1.3
+//= require tms-0.3
+//= require tms_presets
+//= require cufon-yui
+//= require Coolvetica_400.font
+//= require Kozuka_M_500.font
+//= require cufon-replace
+
+$(window).load(function(){
+	$('.slider')._TMS({
+	prevBu:'.prev',
+	nextBu:'.next',
+	pauseOnHover:true,
+	pagNums:false,
+	duration:800,
+	easing:'easeOutQuad',
+	preset:'Fade',
+	slideshow:7000,
+	pagination:'.pagination',
+	waitBannerAnimation:false,
+	banners:'fade'
+	})
+})

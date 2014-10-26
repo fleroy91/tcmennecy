@@ -9,6 +9,8 @@ module Refinery
       validates :title, :presence => true, :uniqueness => true
 
       belongs_to :photo, :class_name => '::Refinery::Image'
+
+      scope :last_two, limit(2).order("date DESC")
     end
   end
 end

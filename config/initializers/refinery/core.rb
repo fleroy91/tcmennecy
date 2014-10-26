@@ -13,7 +13,7 @@ Refinery::Core.configure do |config|
   # Use a custom Dragonfly storage backend instead of the default
   # file system for storing resources and images
   # config.dragonfly_custom_backend_class = nil
-  # config.dragonfly_custom_backend_opts = {}
+  # config.dragonfly_custom_backend_opts = { bucket_name: ENV["S3_BUCKET"], access_key_id: ENV["S3_KEY"], secret_access_key: ENV["S3_SECRET"], region: ENV["S3_REGION"]}
 
   # Whenever Refinery caches anything and can set a cache key, it will add
   # a prefix to the cache key containing the string you set here.

@@ -1,10 +1,19 @@
 <h1 id='logo'>
-  <%= link_to Refinery::Core.site_name, refinery.root_path %>
+  <%= link_to "Mennecy <strong style='font-size:50%;'>Tennis Club</strong>".html_safe, refinery.root_path %>
 </h1>
+	<nav>
+		<div class="social-icons">
+			<div style="float:right;margin-top:10px;">
+				<a href="https://twitter.com/MennecyCom" class="icon-2"></a>
+				<a href="https://www.facebook.com/pages/TC-Mennecy/119584678100200" class="icon-1"></a>
+			</div>
+			<%= form_tag refinery.search_path, style:"float:right;margin-right:10px;" do -%>
+			  <%= text_field_tag :query, {}, {:type => "search",
+			                     :placeholder => "Rechercher...",
+			                     :style => "border: 1px solid lightgrey;padding: 10px;",
+			                     :value => (params[:query] if params[:query])} %>
+			  <%= submit_tag 'Rechercher', class: "search_button" %>
+			<% end %>
+		</div>
+	</nav>
 <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
-<%= form_tag refinery.search_path do -%>
-  <%= text_field_tag :query, {}, {:type => "search",
-                     :placeholder => "Rechercher...",
-                     :value => (params[:query] if params[:query])} %>
-  <%= submit_tag 'Go' %>
-<% end %>
