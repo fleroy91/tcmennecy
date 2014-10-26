@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.1.3'
 gem 'rails', '3.2.19'
 
 # Bundle edge Rails instead:
@@ -50,10 +51,12 @@ gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 #  gem 'refinerycms-page-images', '~> 2.1.0'
 
 # The Heroku gem allows you to interface with Heroku's API
-gem 'heroku'
+# gem 'heroku'
 
 # Fog allows you to use S3 assets (added for Heroku)
 gem 'fog'
 
 # Postgres support (added for Heroku)
 gem 'pg'
+
+gem 'refinerycms-events', :path => 'vendor/extensions'
