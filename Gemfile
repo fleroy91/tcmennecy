@@ -60,3 +60,4 @@ gem 'fog'
 gem 'pg'
 
 gem 'refinerycms-events', :path => 'vendor/extensions'
+gem 'refinerycms-search', '~> 2.1.0'

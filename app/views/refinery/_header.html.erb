@@ -2,3 +2,9 @@
   <%= link_to Refinery::Core.site_name, refinery.root_path %>
 </h1>
 <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+<%= form_tag refinery.search_path do -%>
+  <%= text_field_tag :query, {}, {:type => "search",
+                     :placeholder => "Rechercher...",
+                     :value => (params[:query] if params[:query])} %>
+  <%= submit_tag 'Go' %>
+<% end %>
