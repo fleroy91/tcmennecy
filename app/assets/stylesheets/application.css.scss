@@ -15,25 +15,25 @@
  */
 
 @font-face {
-	font-family: 'Coolvetica-Regular';
-	font-style: normal;
-	font-weight: normal;
-	src: font-url("coolvetica rg.ttf") format("truetype");
+  font-family: 'Coolvetica-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: font-url("coolveticarg.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'asapregular';
-	src: font-url("Asap-Regular-webfont.eot");
-	src: font-url("Asap-Regular-webfont.eot?#iefix") format("embedded-opentype"),
-			 font-url("Asap-Regular-webfont.woff") format("woff"),
-			 font-url("Asap-Regular-webfont.ttf") format("truetype"),
-			 font-url("Asap-Regular-webfont.svg#asapregular") format("svg");
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'asapregular';
+  src: font-url("Asap-Regular-webfont.eot");
+  src: font-url("Asap-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+       font-url("Asap-Regular-webfont.woff") format("woff"),
+       font-url("Asap-Regular-webfont.ttf") format("truetype"),
+       font-url("Asap-Regular-webfont.svg#asapregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 nav ul li a, .font-1, .font-2, .font-3, h2 {
-	font-family: 'asapregular';
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'asapregular';
+  font-weight: normal;
+  font-style: normal;
 }
