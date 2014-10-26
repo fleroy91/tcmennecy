@@ -14,16 +14,16 @@ Refinery::Images.configure do |config|
   # config.pages_per_admin_index = 20
 
   # Configure image sizes
-  # config.user_image_sizes = {:small=>"110x110>", :medium=>"225x255>", :large=>"450x450>"}
+  config.user_image_sizes = {:small=>"110x110>", :medium=>"225x255>", :large=>"450x450>"}
 
   # Configure white-listed mime types for validation
-  # config.whitelisted_mime_types = ["image/jpeg", "image/png", "image/gif", "image/tiff"]
+  config.whitelisted_mime_types = ["image/jpeg", "image/png", "image/gif", "image/tiff"]
 
   # Configure image view options
-  # config.image_views = [:grid, :list]
+  config.image_views = [:grid, :list]
 
   # Configure default image view
-  # config.preferred_image_view = :grid
+  config.preferred_image_view = :grid
 
   # Configure S3 (you can also use ENV for this)
   # The s3_backend setting by default defers to the core setting for this but can be set just for images.

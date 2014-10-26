@@ -28,3 +28,6 @@ fr:
         date: Date
         photo: Photo
         blurb: Blurb
+  time:
+    formats:
+      long: "Le %A %d %B à %H heures"

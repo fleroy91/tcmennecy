@@ -53,11 +53,12 @@ gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 # The Heroku gem allows you to interface with Heroku's API
 # gem 'heroku'
 
-# Fog allows you to use S3 assets (added for Heroku)
-gem 'fog'
-
-# Postgres support (added for Heroku)
-gem 'pg'
+group :production do
+  # Fog allows you to use S3 assets (added for Heroku)
+  gem 'fog'
+  # Postgres support (added for Heroku)
+  gem 'pg'
+end
 
 gem 'refinerycms-events', :path => 'vendor/extensions'
 gem 'refinerycms-search', '~> 2.1.0'

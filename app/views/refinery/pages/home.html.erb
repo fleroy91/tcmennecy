@@ -44,10 +44,10 @@
               <h2 class="p3"><span class="color-1">Derni&egrave;res</span> news</h2>
               <% Refinery::Events::Event.last_two.each_with_index do |event, index| %>
               <div class="wrap box-1 <%= index > 0 ? 'top-2' : '' %>">
-                <%= image_fu event.photo, class: "img-border img-indent" %>
+                <%= image_fu event.photo, "150x150", class: "img-border img-indent" %>
                 <div class="extra-wrap">
                   <p class="p2"><strong><%= event.title %></strong> </p>
-                  <%= raw event.blurb %>
+                  <p class="p2"><%= l event.date, format: :long %></p>
                 </div>
               </div>
              	<% end %>
