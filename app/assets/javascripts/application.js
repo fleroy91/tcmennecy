@@ -10,10 +10,12 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
+//= require jquery-1.7.min
 //= require jquery_ujs
 //= require jquery.easing.1.3
+//= require uCarousel
 //= require tms-0.3
+//= require tms-0.4.1
 //= require tms_presets
 //= require cufon-yui
 //= require Coolvetica_400.font

@@ -3,6 +3,8 @@ PATH
   specs:
     refinerycms-events (1.0)
       refinerycms-core (~> 2.1.3)
+    refinerycms-galleries (1.0)
+      refinerycms-core (~> 2.1.3)
     refinerycms-sliders (1.0)
       refinerycms-core (~> 2.1.3)
 
@@ -245,6 +247,7 @@ DEPENDENCIES
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-events!
+  refinerycms-galleries!
   refinerycms-search (~> 2.1.0)
   refinerycms-sliders!
   sass-rails (~> 3.2.3)

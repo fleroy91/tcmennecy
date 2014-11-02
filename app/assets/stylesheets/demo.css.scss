@@ -50,7 +50,7 @@
 .img-pags li.active a img, .img-pags li a:hover img {
 }
 .prev {
-	background:url(../images/prev-1.gif) 0 0 no-repeat;
+	background: image-url("prev.gif") 0 0 no-repeat;
 	bottom:1px;
 	left:1px;
 	display:block;
@@ -60,7 +60,7 @@
 	z-index:9999;
 }
 .next {
-	background:url(../images/next-1.gif) 0 0 no-repeat;
+	background: image-url("next.gif") 0 0 no-repeat;
 	bottom:1px;
 	right:1px;
 	display:block;

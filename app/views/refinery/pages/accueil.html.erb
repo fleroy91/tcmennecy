@@ -4,7 +4,7 @@
       <div class="grid_12">
         <div class="slider">
           <ul class="items">
-            <%= Refinery::Sliders::Slider.all.each_with_index do |slider, index| %>
+            <% Refinery::Sliders::Slider.all.each do |slider| %>
               <li><%= image_fu slider.photo, "640x480" %>
                 <div class="banner">
                   <p class="font-1"><%= slider.titre %><span><%= slider.titre_suite %></span></p>
