@@ -1,0 +1,42 @@
+  <!--==============================content================================-->
+  <section id="content">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="box-shadow">
+          <div class="wrap block-2">
+            <div class="col-3">
+              <h2><span class="color-1">Nous</span> trouver</h2>
+              <div class="map img-border">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2640.7660015914944!2d2.4198130000000004!3d48.556875999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5dd62ad9e57b1%3A0xd6475e76745327c0!2sTennis+Club+de+Mennecy!5e0!3m2!1sfr!2sfr!4v1414966087637" width="400" height="300" frameborder="0" style="border:0"></iframe>
+              </div>
+              <dl>
+                <dt class="color-1"><strong>Boulevard Charles de Gaulle<br>
+                   (Collé au stade nautique départemental)</strong></dt>
+                <dd><span>Telephone:</span>01 64 57 22 09</dd>
+                <dd><span>E-mail:</span><a href="mailto:tc.mennecy@fft.fr" class="link">tc.mennecy@fft.fr</a></dd>
+              </dl>
+            </div>
+            <div class="col-4">
+              <h2><span class="color-1">Nous envoyer</span> un mail</h2>
+              <form id="form" method="post" action="#">
+                <fieldset>
+                  <label>
+                    <input id="subject" type="text" value="Sujet" onBlur="if(this.value=='') this.value='Sujet'" onFocus="if(this.value =='Sujet' ) this.value=''">
+                  </label>
+                  <label>
+                    <textarea id="message" onBlur="if(this.value==''){this.value='Message'}" onFocus="if(this.value=='Message'){this.value=''}">Message</textarea>
+                  </label>
+                  <div class="btns"><a href="#" id="clear" class="button">Effacer</a><a href="#" id="send" class="button">Envoyer</a></div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+<% content_for :javascripts do %>
+  <script>Cufon.now();</script>
+  <%= javascript_include_tag "contact" %>
+<% end %>

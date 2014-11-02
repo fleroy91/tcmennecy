@@ -37,3 +37,15 @@ nav ul li a, .font-1, .font-2, .font-3, h2 {
   font-weight: normal;
   font-style: normal;
 }
+
+nav ul li {
+  padding: 5px 10px;
+  border: 1px solid lightgrey;
+  background-color: rgba(1,165,202,0.1);
+  margin-left: 10px !important;
+}
+
+.blurb ul {
+  padding-left: 17px;
+  list-style: inherit;
+}
