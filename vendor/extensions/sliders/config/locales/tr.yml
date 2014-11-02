@@ -1,0 +1,31 @@
+tr:
+  refinery:
+    plugins:
+      sliders:
+        title: Sliders
+    sliders:
+      admin:
+        sliders:
+          actions:
+            create_new: Yeni Ekle Slider
+            reorder: Tekrar sirala Sliders
+            reorder_done: Tekrar siralama tamamlandiSliders
+          records:
+            title: Sliders
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Sliders yok henuz.  Tikla "Yeni Ekle Slider" eklemek senin ilk slider.
+          slider:
+            view_live_html: Bunu canlu slider goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle slider
+            delete: Bunu Sil slider sonsuza dek
+      sliders:
+        show:
+          other: Diger Sliders
+  activerecord:
+    attributes:
+      'refinery/sliders/slider':
+        titre: Titre
+        titre_suite: Titre Suite
+        sous_titre: Sous Titre
+        lien: Lien
+        photo: Photo

@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      sliders:
+        title: Sliders
+#        article: masculino/femenino
+    sliders:
+      admin:
+        sliders:
+          actions:
+            create_new: Crear nuevo slider
+            reorder: Reordenar sliders
+            reorder_done: Reordenación de sliders completada
+          records:
+            title: Sliders
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay sliders todavía. Pulsa en "Crear nuevo Slider" para crear tu primer slider.
+          slider:
+            view_live_html: Ver este slider como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este slider
+            delete: Borrar este slider para siempre
+      sliders:
+        show:
+          other: Otros sliders
+  activerecord:
+    attributes:
+      'refinery/sliders/slider':
+        titre: Titre
+        titre_suite: Titre Suite
+        sous_titre: Sous Titre
+        lien: Lien
+        photo: Photo

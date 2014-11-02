@@ -14,3 +14,6 @@ Refinery::Events::Engine.load_seed
 
 # Added by Refinery CMS Search engine
 Refinery::Search::Engine.load_seed
+
+# Added by Refinery CMS Sliders extension
+Refinery::Sliders::Engine.load_seed

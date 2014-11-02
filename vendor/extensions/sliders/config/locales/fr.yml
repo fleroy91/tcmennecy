@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      sliders:
+        title: Sliders
+    sliders:
+      admin:
+        sliders:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Slider
+            reorder: Réordonner les Sliders
+            reorder_done: Fin de réordonnancement des Sliders
+          records:
+            title: Sliders
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Slider. Cliquer sur "Créer un(e) nouve(au/l/lle) Slider" pour créer votre premi(er/ère) slider.'
+          slider:
+            view_live_html: Voir ce(t/tte) slider <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) slider
+            delete: Supprimer définitivement ce(t/tte) slider
+      sliders:
+        show:
+          other: Autres Sliders
+  activerecord:
+    attributes:
+      'refinery/sliders/slider':
+        titre: Titre
+        titre_suite: Titre Suite
+        sous_titre: Sous Titre
+        lien: Lien
+        photo: Photo

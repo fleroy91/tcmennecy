@@ -1,0 +1,31 @@
+it:
+  refinery:
+    plugins:
+      sliders:
+        title: Sliders
+    sliders:
+      admin:
+        sliders:
+          actions:
+            create_new: Aggiungi Nuovo Slider
+            reorder: Riordina Sliders
+            reorder_done: Termina il Riordino di Sliders
+          records:
+            title: Sliders
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Sliders. Clicca "Aggiungi Nuovo Slider" per aggiungere il tuo primo slider.
+          slider:
+            view_live_html: Guarda live questo slider <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo slider
+            delete: Rimuovi per sempre questo slider
+      sliders:
+        show:
+          other: Altri Sliders
+  activerecord:
+    attributes:
+      'refinery/sliders/slider':
+        titre: Titre
+        titre_suite: Titre Suite
+        sous_titre: Sous Titre
+        lien: Lien
+        photo: Photo

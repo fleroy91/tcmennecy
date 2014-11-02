@@ -62,3 +62,4 @@ end
 
 gem 'refinerycms-events', :path => 'vendor/extensions'
 gem 'refinerycms-search', '~> 2.1.0'
+gem 'refinerycms-sliders', :path => 'vendor/extensions'

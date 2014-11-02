@@ -1,0 +1,62 @@
+  <!--==============================content================================-->
+  <section id="content">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="slider">
+          <ul class="items">
+            <%= Refinery::Sliders::Slider.all.each_with_index do |slider, index| %>
+              <li><%= image_fu slider.photo, "640x480" %>
+                <div class="banner">
+                  <p class="font-1"><%= slider.titre %><span><%= slider.titre_suite %></span></p>
+                  <p class="font-2"><%= slider.sous_titre %></p>
+                  <a href="<%= slider.lien %>">En savoir plus</a>
+                </div>
+              </li>
+            <% end %>
+          </ul>
+          <div class="pagination">
+            <ul>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="grid_12 top-1">
+        <div class="block-1 box-shadow">
+          <%=raw @page.content_for(:body) %>
+        </div>
+      </div>
+      <div class="grid_12 top-1">
+        <div class="box-shadow">
+          <div class="wrap block-2">
+            <div class="col-1">
+              <h2 class="p3"><span class="color-1">Derni&egrave;res</span> news</h2>
+              <% Refinery::Events::Event.last_two.each_with_index do |event, index| %>
+              <div class="wrap box-1 <%= index > 0 ? 'top-2' : '' %>">
+                <%= image_fu event.photo, "150x150", class: "img-border img-indent" %>
+                <div class="extra-wrap">
+                  <p class="p2"><strong><%= event.title %></strong> </p>
+                  <p class="p2"><%= l event.date, format: :long %></p>
+                </div>
+              </div>
+             	<% end %>
+            </div>
+            <div class="col-2">
+              <h2 class="p3"><span class="color-1">Acc&egrave;s</span> rapide</h2>
+              <ul class="list-1">
+                <li><a href="https://adoc.app.fft.fr/adoc/">Réserver un court</a></li>
+                <li><a href="#">Infos pratiques</a></li>
+                <li><a href="#">nous contacter</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+<% content_for :javascripts do %>
+  <script>Cufon.now();</script>
+<% end %>

@@ -1,6 +1,18 @@
-<section id='body'>
-  <%=raw @page.content_for(:body) %>
-</section>
-<section id='side_body'>
-  <%=raw @page.content_for(:side_body) %>
-</section>
+<!--==============================content================================-->
+  <section id="content">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="box-shadow">
+          <div class="wrap block-2">
+            <div class="col-3">
+              <%=raw @page.content_for(:side_body) %>
+              </div>
+            <div class="col-4">
+              <%=raw @page.content_for(:body) %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>

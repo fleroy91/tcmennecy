@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      sliders:
+        title: Sliders
+    sliders:
+      admin:
+        sliders:
+          actions:
+            create_new: Lag en ny Slider
+            reorder: Endre rekkefølgen på Sliders
+            reorder_done: Ferdig å endre rekkefølgen Sliders
+          records:
+            title: Sliders
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Sliders enda. Klikk på "Lag en ny Slider" for å legge til din første slider.
+          slider:
+            view_live_html: Vis hvordan denne slider ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne slider
+            delete: Fjern denne slider permanent
+      sliders:
+        show:
+          other: Andre Sliders
+  activerecord:
+    attributes:
+      'refinery/sliders/slider':
+        titre: Titre
+        titre_suite: Titre Suite
+        sous_titre: Sous Titre
+        lien: Lien
+        photo: Photo

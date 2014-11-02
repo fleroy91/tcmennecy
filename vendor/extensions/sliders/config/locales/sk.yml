@@ -1,0 +1,31 @@
+sk:
+  refinery:
+    plugins:
+      sliders:
+        title: Sliders
+    sliders:
+      admin:
+        sliders:
+          actions:
+            create_new: Pridať Slider
+            reorder: Preusporiadať Sliders
+            reorder_done: Koniec radenia Sliders
+          records:
+            title: Sliders
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Sliders. Kliknite na "Pridať Slider" pre pridanie prvého slider.
+          slider:
+            view_live_html: Zobraziť náhľad slider<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť slider
+            delete: Zmazať slider
+      sliders:
+        show:
+          other: Daľšie Sliders
+  activerecord:
+    attributes:
+      'refinery/sliders/slider':
+        titre: Titre
+        titre_suite: Titre Suite
+        sous_titre: Sous Titre
+        lien: Lien
+        photo: Photo

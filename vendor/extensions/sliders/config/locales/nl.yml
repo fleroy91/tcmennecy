@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      sliders:
+        title: Sliders
+    sliders:
+      admin:
+        sliders:
+          actions:
+            create_new: Nieuwe Slider toevoegen
+            reorder: De volgorde van de Sliders wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Slider-volgorde
+          records:
+            title: Sliders
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Sliders. Druk op 'Nieuwe Slider toevoegen' om de eerste toe te voegen.
+          slider:
+            view_live_html: Deze slider op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze slider
+            delete: Deze slider definitief verwijderen
+      sliders:
+        show:
+          other: Andere Sliders
+  activerecord:
+    attributes:
+      'refinery/sliders/slider':
+        titre: Titre
+        titre_suite: Titre Suite
+        sous_titre: Sous Titre
+        lien: Lien
+        photo: Photo
