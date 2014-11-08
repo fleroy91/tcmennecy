@@ -20,3 +20,6 @@ Refinery::Sliders::Engine.load_seed
 
 # Added by Refinery CMS Galleries extension
 Refinery::Galleries::Engine.load_seed
+
+# Added by Refinery CMS Partenaires extension
+Refinery::Partenaires::Engine.load_seed

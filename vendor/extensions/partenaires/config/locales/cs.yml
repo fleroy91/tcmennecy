@@ -1,0 +1,30 @@
+cs:
+  refinery:
+    plugins:
+      partenaires:
+        title: Partenaires
+    partenaires:
+      admin:
+        partenaires:
+          actions:
+            create_new: Přidat Partenaire
+            reorder: Řadit Partenaires
+            reorder_done: Konec řazení Partenaires
+          records:
+            title: Partenaires
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Partenaires. Zvolte "Přidat Partenaire" pro přidání prvního partenaire.
+          partenaire:
+            view_live_html: Zobrazit náhled partenaire<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit partenaire
+            delete: Smazat partenaire
+      partenaires:
+        show:
+          other: Další Partenaires
+  activerecord:
+    attributes:
+      'refinery/partenaires/partenaire':
+        title: Title
+        description: Description
+        logo: Logo
+        lien: Lien

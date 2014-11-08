@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      partenaires:
+        title: Partenaires
+    partenaires:
+      admin:
+        partenaires:
+          actions:
+            create_new: 建立新的 Partenaire
+            reorder: 对 Partenaires 重新排序
+            reorder_done: 对 Partenaires 的重新排序结束
+          records:
+            title: Partenaires
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Partenaires yet. Click "Add New Partenaire" to add your first partenaire.
+            no_items_yet: 目前没有 Partenaires . 点击 "Add New Partenaire" 创建一个partenaire.
+          partenaire:
+            view_live_html: 查看 partenaire 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 partenaire
+            delete: 永久删除 partenaire
+      partenaires:
+        show:
+          other: 其他 Partenaires
+  activerecord:
+    attributes:
+      'refinery/partenaires/partenaire':
+        title: Title
+        description: Description
+        logo: Logo
+        lien: Lien

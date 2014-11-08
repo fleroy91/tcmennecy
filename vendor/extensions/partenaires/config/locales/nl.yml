@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      partenaires:
+        title: Partenaires
+    partenaires:
+      admin:
+        partenaires:
+          actions:
+            create_new: Nieuwe Partenaire toevoegen
+            reorder: De volgorde van de Partenaires wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Partenaire-volgorde
+          records:
+            title: Partenaires
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Partenaires. Druk op 'Nieuwe Partenaire toevoegen' om de eerste toe te voegen.
+          partenaire:
+            view_live_html: Deze partenaire op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze partenaire
+            delete: Deze partenaire definitief verwijderen
+      partenaires:
+        show:
+          other: Andere Partenaires
+  activerecord:
+    attributes:
+      'refinery/partenaires/partenaire':
+        title: Title
+        description: Description
+        logo: Logo
+        lien: Lien

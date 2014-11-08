@@ -1,0 +1,45 @@
+<% content_for :body_content_title do %>
+  <%= @partenaire.title %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @partenaire.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @partenaire.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Logo</h1>
+    <p>
+      <%= image_fu @partenaire.logo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Lien</h1>
+    <p>
+      <%=raw @partenaire.lien %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="partenaires">
+      <% @partenaires.each do |partenaire| %>
+        <li>
+          <%= link_to partenaire.title, refinery.partenaires_partenaire_path(partenaire) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

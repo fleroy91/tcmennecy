@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      partenaires:
+        title: Partenaires
+    partenaires:
+      admin:
+        partenaires:
+          actions:
+            create_new: Lag en ny Partenaire
+            reorder: Endre rekkefølgen på Partenaires
+            reorder_done: Ferdig å endre rekkefølgen Partenaires
+          records:
+            title: Partenaires
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Partenaires enda. Klikk på "Lag en ny Partenaire" for å legge til din første partenaire.
+          partenaire:
+            view_live_html: Vis hvordan denne partenaire ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne partenaire
+            delete: Fjern denne partenaire permanent
+      partenaires:
+        show:
+          other: Andre Partenaires
+  activerecord:
+    attributes:
+      'refinery/partenaires/partenaire':
+        title: Title
+        description: Description
+        logo: Logo
+        lien: Lien

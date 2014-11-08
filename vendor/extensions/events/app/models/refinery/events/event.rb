@@ -11,6 +11,7 @@ module Refinery
       belongs_to :photo, :class_name => '::Refinery::Image'
 
       scope :last_two, where(a_afficher: true).limit(2).order("date DESC")
+      scope :last_one, where(a_afficher: true).limit(1).order("date DESC")
       scope :visible, where(a_afficher: true).order("date DESC")
     end
   end

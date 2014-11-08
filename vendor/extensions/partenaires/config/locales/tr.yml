@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      partenaires:
+        title: Partenaires
+    partenaires:
+      admin:
+        partenaires:
+          actions:
+            create_new: Yeni Ekle Partenaire
+            reorder: Tekrar sirala Partenaires
+            reorder_done: Tekrar siralama tamamlandiPartenaires
+          records:
+            title: Partenaires
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Partenaires yok henuz.  Tikla "Yeni Ekle Partenaire" eklemek senin ilk partenaire.
+          partenaire:
+            view_live_html: Bunu canlu partenaire goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle partenaire
+            delete: Bunu Sil partenaire sonsuza dek
+      partenaires:
+        show:
+          other: Diger Partenaires
+  activerecord:
+    attributes:
+      'refinery/partenaires/partenaire':
+        title: Title
+        description: Description
+        logo: Logo
+        lien: Lien

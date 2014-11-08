@@ -16,22 +16,34 @@
 //= require tms-0.3
 //= require tms_presets
 //= require cufon-yui
+//= require jquery.slides.min
 //= require Coolvetica_400.font
 //= require Kozuka_M_500.font
 //= require cufon-replace
 
 $(window).load(function(){
-	$('.slider')._TMS({
-	prevBu:'.prev',
-	nextBu:'.next',
-	pauseOnHover:true,
-	pagNums:false,
-	duration:800,
-	easing:'easeOutQuad',
-	preset:'Fade',
-	slideshow:7000,
-	pagination:'.pagination',
-	waitBannerAnimation:false,
-	banners:'fade'
-	})
+	$('#slides1').slidesjs({
+    width: 940,
+    height: 280,
+    navigation: true,
+    start: 1,
+    play: {
+      auto: true,
+    	pauseOnHover: true,
+    	interval: 7000
+    }
+  });
+
+	$('#slides2').slidesjs({
+    width: 575,
+    height: 70,
+    navigation: true,
+    start: 1,
+    play: {
+      auto: true,
+    	pauseOnHover: true,
+    	interval: 3000
+    }
+  });
+
 })

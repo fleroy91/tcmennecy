@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      partenaires:
+        title: Partenaires
+#        article: masculino/femenino
+    partenaires:
+      admin:
+        partenaires:
+          actions:
+            create_new: Crear nuevo partenaire
+            reorder: Reordenar partenaires
+            reorder_done: Reordenación de partenaires completada
+          records:
+            title: Partenaires
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay partenaires todavía. Pulsa en "Crear nuevo Partenaire" para crear tu primer partenaire.
+          partenaire:
+            view_live_html: Ver este partenaire como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este partenaire
+            delete: Borrar este partenaire para siempre
+      partenaires:
+        show:
+          other: Otros partenaires
+  activerecord:
+    attributes:
+      'refinery/partenaires/partenaire':
+        title: Title
+        description: Description
+        logo: Logo
+        lien: Lien

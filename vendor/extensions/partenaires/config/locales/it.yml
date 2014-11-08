@@ -1,0 +1,30 @@
+it:
+  refinery:
+    plugins:
+      partenaires:
+        title: Partenaires
+    partenaires:
+      admin:
+        partenaires:
+          actions:
+            create_new: Aggiungi Nuovo Partenaire
+            reorder: Riordina Partenaires
+            reorder_done: Termina il Riordino di Partenaires
+          records:
+            title: Partenaires
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Partenaires. Clicca "Aggiungi Nuovo Partenaire" per aggiungere il tuo primo partenaire.
+          partenaire:
+            view_live_html: Guarda live questo partenaire <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo partenaire
+            delete: Rimuovi per sempre questo partenaire
+      partenaires:
+        show:
+          other: Altri Partenaires
+  activerecord:
+    attributes:
+      'refinery/partenaires/partenaire':
+        title: Title
+        description: Description
+        logo: Logo
+        lien: Lien

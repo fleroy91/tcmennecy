@@ -1,0 +1,44 @@
+<%= form_for [refinery, :partenaires_admin, @partenaire] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @partenaire,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "partenaires/partenaire" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :logo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :logo_id,
+               :image => @partenaire.logo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :lien -%>
+    <%= f.text_field :lien -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.partenaires.admin.partenaires.partenaire'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @partenaire.title) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>
