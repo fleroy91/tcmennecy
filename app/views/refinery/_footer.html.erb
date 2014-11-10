@@ -2,4 +2,21 @@
   <%= t('.copyright', :year => Time.now.year,
                       :site_name => Refinery::Core.site_name) %>
   - CLUB FFT N°3191 03 32 - TENNIS CLUB DE MENNECY 01.64.57.22.09
+	<nav>
+		<div class="social-icons">
+			<div style="float:right;margin-top:0px;">
+				<a href="https://twitter.com/MennecyCom" class="icon-2"></a>
+				<a href="https://www.facebook.com/pages/TC-Mennecy/119584678100200" class="icon-1"></a>
+			</div>
+			<!--
+			<%= form_tag refinery.search_path, style:"float:right;margin-right:10px;" do -%>
+			  <%= text_field_tag :query, {}, {:type => "search",
+			                     :placeholder => "Rechercher...",
+			                     :style => "border: 1px solid grey;padding: 10px;background-color:rgba(255,255,255,0.3);",
+			                     :value => (params[:query] if params[:query])} %>
+			  <%= submit_tag 'Rechercher', class: "search_button" %>
+			<% end %> -->
+		</div>
+	</nav>
+
 </p>

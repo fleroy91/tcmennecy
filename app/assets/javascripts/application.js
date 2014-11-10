@@ -46,4 +46,9 @@ $(window).load(function(){
     }
   });
 
+	nb_images = 4;
+	index = parseInt(Math.random() * nb_images) + 1;
+  $("body").css({
+  	"background-image": "url('/assets/fond" + index + ".jpeg')"
+  });
 })
