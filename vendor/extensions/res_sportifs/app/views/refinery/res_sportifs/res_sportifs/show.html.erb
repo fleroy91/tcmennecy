@@ -1,0 +1,40 @@
+<!--==============================content================================-->
+<% content_for :body do %>
+  <section id="content">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="box-shadow">
+          <div class="wrap block-2">
+            <div class="col-3">
+              <h2 class="small-h2"><%= t('.other') %></h2>
+                <ul class="side_menu">
+                  <% @res_sportifs.each do |res_sportif| %>
+                    <% if res_sportif != @res_sportif then %>
+                      <li>
+                        <%= link_to res_sportif.titre, refinery.res_sportifs_res_sportif_path(res_sportif) %>
+                      </li>
+                    <% end %>
+                  <% end %>
+                </ul>
+                <br/>
+                <%= link_to t(".list_all"), refinery.res_sportifs_res_sportifs_path %>
+            </div>
+            <div class="col-4">
+              <h2 class="color-1"><%= @res_sportif.titre %></h2>
+              <h3>Le <%=l @res_sportif.date, format: :long %></h3>
+              <%= image_fu @res_sportif.photo, "590x450" %>
+              <br/>
+              <%= raw @res_sportif.description %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+  <% content_for :javascripts do %>
+    <script>Cufon.now();</script>
+  <% end %>
+<% end %>
+
+<%= render '/refinery/content_page', :hide_sections => :body_content_title %>

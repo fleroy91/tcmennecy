@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      competitions:
+        title: Compétitions
+    competitions:
+      admin:
+        competitions:
+          actions:
+            create_new: Créer une nouvelle compétition
+            reorder: Réordonner les compétitions
+            reorder_done: Fin de réordonnancement des compétitions
+          records:
+            title: Liste des compétitions
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucune compétition. Cliquer sur "Créer une nouvelle compétition" pour créer votre première compétition.'
+          competition:
+            view_live_html: Voir cette compétition <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier cette compétition
+            delete: Supprimer définitivement cette compétition
+      competitions:
+        show:
+          other: Autres compétitions
+  activerecord:
+    attributes:
+      'refinery/competitions/competition':
+        title: Title
+        debut: Debut
+        fin: Fin
+        description: Description

@@ -1,0 +1,28 @@
+nb:
+  refinery:
+    plugins:
+      res_sportifs:
+        title: Res Sportifs
+    res_sportifs:
+      admin:
+        res_sportifs:
+          actions:
+            create_new: Lag en ny Res Sportif
+            reorder: Endre rekkefølgen på Res Sportifs
+            reorder_done: Ferdig å endre rekkefølgen Res Sportifs
+          records:
+            title: Res Sportifs
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Res Sportifs enda. Klikk på "Lag en ny Res Sportif" for å legge til din første res sportif.
+          res_sportif:
+            view_live_html: Vis hvordan denne res sportif ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne res sportif
+            delete: Fjern denne res sportif permanent
+      res_sportifs:
+        show:
+          other: Andre Res Sportifs
+  activerecord:
+    attributes:
+      'refinery/res_sportifs/res_sportif':
+        titre: Titre
+        description: Description

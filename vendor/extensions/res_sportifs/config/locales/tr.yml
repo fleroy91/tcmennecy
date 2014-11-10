@@ -1,0 +1,28 @@
+tr:
+  refinery:
+    plugins:
+      res_sportifs:
+        title: Res Sportifs
+    res_sportifs:
+      admin:
+        res_sportifs:
+          actions:
+            create_new: Yeni Ekle Res Sportif
+            reorder: Tekrar sirala Res Sportifs
+            reorder_done: Tekrar siralama tamamlandiRes Sportifs
+          records:
+            title: Res Sportifs
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Res Sportifs yok henuz.  Tikla "Yeni Ekle Res Sportif" eklemek senin ilk res sportif.
+          res_sportif:
+            view_live_html: Bunu canlu res sportif goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle res sportif
+            delete: Bunu Sil res sportif sonsuza dek
+      res_sportifs:
+        show:
+          other: Diger Res Sportifs
+  activerecord:
+    attributes:
+      'refinery/res_sportifs/res_sportif':
+        titre: Titre
+        description: Description

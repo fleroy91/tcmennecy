@@ -1,0 +1,28 @@
+cs:
+  refinery:
+    plugins:
+      res_sportifs:
+        title: Res Sportifs
+    res_sportifs:
+      admin:
+        res_sportifs:
+          actions:
+            create_new: Přidat Res Sportif
+            reorder: Řadit Res Sportifs
+            reorder_done: Konec řazení Res Sportifs
+          records:
+            title: Res Sportifs
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Res Sportifs. Zvolte "Přidat Res Sportif" pro přidání prvního res sportif.
+          res_sportif:
+            view_live_html: Zobrazit náhled res sportif<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit res sportif
+            delete: Smazat res sportif
+      res_sportifs:
+        show:
+          other: Další Res Sportifs
+  activerecord:
+    attributes:
+      'refinery/res_sportifs/res_sportif':
+        titre: Titre
+        description: Description

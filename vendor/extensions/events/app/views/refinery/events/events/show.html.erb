@@ -1,45 +1,40 @@
-<% content_for :body_content_title do %>
-  <%= @event.title %>
-<% end %>
-
+<!--==============================content================================-->
 <% content_for :body do %>
-  <section>
-    <h1>Title</h1>
-    <p>
-      <%=raw @event.title %>
-    </p>
+  <section id="content">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="box-shadow">
+          <div class="wrap block-2">
+            <div class="col-3">
+              <h2 class="small-h2"><%= t('.other') %></h2>
+                <ul class="side_menu">
+                  <% @events.each do |event| %>
+                    <% if event != @event then %>
+                      <li>
+                        <%= link_to event.title, refinery.events_event_path(event) %>
+                      </li>
+                    <% end %>
+                  <% end %>
+                </ul>
+                <br/>
+                <%= link_to t(".list_all"), refinery.events_events_path %>
+            </div>
+            <div class="col-4">
+              <h2 class="color-1"><%= @event.title %></h2>
+              <h3>Le <%=l @event.date, format: :long %></h3>
+              <%= image_fu @event.photo, "590x450" %>
+              <br/>
+              <%= raw @event.blurb %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
   </section>
-  <section>
-    <h1>Date</h1>
-    <p>
-      <%=raw @event.date %>
-    </p>
-  </section>
-  <section>
-    <h1>Photo</h1>
-    <p>
-      <%= image_fu @event.photo, "300x300" %>
-    </p>
-  </section>
-  <section>
-    <h1>Blurb</h1>
-    <p>
-      <%=raw @event.blurb %>
-    </p>
-  </section>
+  <% content_for :javascripts do %>
+    <script>Cufon.now();</script>
+  <% end %>
 <% end %>
 
-<% content_for :side_body do %>
-  <aside>
-    <h2><%= t('.other') %></h2>
-    <ul id="events">
-      <% @events.each do |event| %>
-        <li>
-          <%= link_to event.title, refinery.events_event_path(event) %>
-        </li>
-      <% end %>
-    </ul>
-  </aside>
-<% end %>
-
-<%= render '/refinery/content_page' %>
+<%= render '/refinery/content_page', :hide_sections => :body_content_title %>

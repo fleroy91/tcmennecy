@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Competitions::Admin::CompetitionsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.competitions_admin_competitions_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_competitions_admin_competition_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Competitions::Admin::CompetitionsController.sortable? && ::Refinery::Competitions::Competition.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Competitions"),
+                 refinery.competitions_admin_competitions_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Competitions"),
+                 refinery.competitions_admin_competitions_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

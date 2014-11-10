@@ -1,0 +1,28 @@
+nl:
+  refinery:
+    plugins:
+      res_sportifs:
+        title: Res Sportifs
+    res_sportifs:
+      admin:
+        res_sportifs:
+          actions:
+            create_new: Nieuwe Res Sportif toevoegen
+            reorder: De volgorde van de Res Sportifs wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Res Sportif-volgorde
+          records:
+            title: Res Sportifs
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Res Sportifs. Druk op 'Nieuwe Res Sportif toevoegen' om de eerste toe te voegen.
+          res_sportif:
+            view_live_html: Deze res sportif op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze res sportif
+            delete: Deze res sportif definitief verwijderen
+      res_sportifs:
+        show:
+          other: Andere Res Sportifs
+  activerecord:
+    attributes:
+      'refinery/res_sportifs/res_sportif':
+        titre: Titre
+        description: Description

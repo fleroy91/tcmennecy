@@ -5,7 +5,11 @@
         <div class="box-shadow">
           <div class="wrap block-2">
             <div class="col-3">
-              <%=raw @page.content_for(:side_body) %>
+                <%= presenter= SubMenuPresenter.new(sub_menu_pages(@page), self)
+                  presenter.css = "side_menu"
+                  presenter.dom_id = "side_menu"
+                  presenter.to_html %>
+                <%=raw @page.content_for(:side_body) %>
               </div>
             <div class="col-4">
               <%=raw @page.content_for(:body) %>

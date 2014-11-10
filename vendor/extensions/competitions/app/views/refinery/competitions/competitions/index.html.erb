@@ -1,0 +1,43 @@
+<% content_for :body do %>
+  <section id="content">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="box-shadow">
+          <div class="wrap block-2">
+            <div class="col-3">
+								<h1 id="body_content_title">Liste des compétitions</h1>
+              </div>
+            <div class="col-4">
+            	<table class="table table-striped table-bordered">
+            		<thead>
+            			<tr>
+	            			<th>Compétition</th>
+	            			<th>Du</th>
+	            			<th>Au</th>
+	            			<th></th>
+            			</tr>
+            		</thead>
+            		<tbody>
+							    <% @competitions.each do |competition| %>
+							    	<tr>
+								      <td><%= link_to competition.title, refinery.competitions_competition_path(competition) %></td>
+								      <td><%=l competition.debut %></td>
+								      <td><%=l competition.fin %></td>
+								      <td><%= link_to "Plus d'informations", refinery.competitions_competition_path(competition) %></td>
+								     </tr>
+							    <% end %>
+            		</tbody>
+            	</table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+	<% content_for :javascripts do %>
+	  <script>Cufon.now();</script>
+	<% end %>
+<% end %>
+
+<%= render '/refinery/content_page', :hide_sections => :body_content_title %>

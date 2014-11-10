@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::ResSportifs::Admin::ResSportifsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.res_sportifs_admin_res_sportifs_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_res_sportifs_admin_res_sportif_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::ResSportifs::Admin::ResSportifsController.sortable? && ::Refinery::ResSportifs::ResSportif.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Res Sportifs"),
+                 refinery.res_sportifs_admin_res_sportifs_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Res Sportifs"),
+                 refinery.res_sportifs_admin_res_sportifs_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

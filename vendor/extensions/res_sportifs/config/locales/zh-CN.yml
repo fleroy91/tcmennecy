@@ -1,0 +1,30 @@
+zh-CN:
+  refinery:
+    plugins:
+      res_sportifs:
+        title: Res Sportifs
+    res_sportifs:
+      admin:
+        res_sportifs:
+          actions:
+            create_new: 建立新的 Res Sportif
+            reorder: 对 Res Sportifs 重新排序
+            reorder_done: 对 Res Sportifs 的重新排序结束
+          records:
+            title: Res Sportifs
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Res Sportifs yet. Click "Add New Res Sportif" to add your first res sportif.
+            no_items_yet: 目前没有 Res Sportifs . 点击 "Add New Res Sportif" 创建一个res sportif.
+          res_sportif:
+            view_live_html: 查看 res sportif 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 res sportif
+            delete: 永久删除 res sportif
+      res_sportifs:
+        show:
+          other: 其他 Res Sportifs
+  activerecord:
+    attributes:
+      'refinery/res_sportifs/res_sportif':
+        titre: Titre
+        description: Description

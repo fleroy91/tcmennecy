@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141108130556) do
+ActiveRecord::Schema.define(:version => 20141110123002) do
+
+  create_table "refinery_competitions", :force => true do |t|
+    t.string   "title"
+    t.date     "debut"
+    t.date     "fin"
+    t.text     "description"
+    t.integer  "position"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "refinery_events", :force => true do |t|
     t.string   "title"
@@ -143,6 +153,16 @@ ActiveRecord::Schema.define(:version => 20141108130556) do
     t.integer  "position"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "refinery_res_sportifs", :force => true do |t|
+    t.string   "titre"
+    t.text     "description"
+    t.integer  "position"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.date     "date"
+    t.integer  "photo_id"
   end
 
   create_table "refinery_resources", :force => true do |t|

@@ -1,0 +1,40 @@
+<%= form_for [refinery, :competitions_admin, @competition] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @competition,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :debut -%>
+    <%= f.date_select :debut -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :fin -%>
+    <%= f.date_select :fin -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "competitions/competition" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.competitions.admin.competitions.competition'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @competition.title) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

@@ -1,0 +1,39 @@
+<!--==============================content================================-->
+<% content_for :body do %>
+  <section id="content">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="box-shadow">
+          <div class="wrap block-2">
+            <div class="col-3">
+              <h2 class="small-h2"><%= t('.other') %></h2>
+                <ul class="side_menu">
+                  <% @competitions.each do |competition| %>
+                    <% if competition != @competition then %>
+                      <li>
+                        <%= link_to competition.title, refinery.competitions_competition_path(competition) %>
+                      </li>
+                    <% end %>
+                  <% end %>
+                </ul>
+                <br/>
+                <%= link_to "Toutes les compétitions", refinery.competitions_competitions_path %>
+            </div>
+            <div class="col-4">
+              <h2 class="color-1"><%= @competition.title %></h2>
+              <h3>Du <%=l @competition.debut %> au <%= l @competition.fin %></h3>
+              <br/>
+              <%= raw @competition.description %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+  <% content_for :javascripts do %>
+    <script>Cufon.now();</script>
+  <% end %>
+<% end %>
+
+<%= render '/refinery/content_page', :hide_sections => :body_content_title %>

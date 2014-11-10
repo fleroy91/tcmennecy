@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      competitions:
+        title: Competitions
+    competitions:
+      admin:
+        competitions:
+          actions:
+            create_new: 建立新的 Competition
+            reorder: 对 Competitions 重新排序
+            reorder_done: 对 Competitions 的重新排序结束
+          records:
+            title: Competitions
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Competitions yet. Click "Add New Competition" to add your first competition.
+            no_items_yet: 目前没有 Competitions . 点击 "Add New Competition" 创建一个competition.
+          competition:
+            view_live_html: 查看 competition 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 competition
+            delete: 永久删除 competition
+      competitions:
+        show:
+          other: 其他 Competitions
+  activerecord:
+    attributes:
+      'refinery/competitions/competition':
+        title: Title
+        debut: Debut
+        fin: Fin
+        description: Description

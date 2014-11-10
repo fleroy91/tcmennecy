@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      competitions:
+        title: Competitions
+#        article: masculino/femenino
+    competitions:
+      admin:
+        competitions:
+          actions:
+            create_new: Crear nuevo competition
+            reorder: Reordenar competitions
+            reorder_done: Reordenación de competitions completada
+          records:
+            title: Competitions
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay competitions todavía. Pulsa en "Crear nuevo Competition" para crear tu primer competition.
+          competition:
+            view_live_html: Ver este competition como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este competition
+            delete: Borrar este competition para siempre
+      competitions:
+        show:
+          other: Otros competitions
+  activerecord:
+    attributes:
+      'refinery/competitions/competition':
+        title: Title
+        debut: Debut
+        fin: Fin
+        description: Description

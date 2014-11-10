@@ -1,0 +1,30 @@
+sk:
+  refinery:
+    plugins:
+      competitions:
+        title: Competitions
+    competitions:
+      admin:
+        competitions:
+          actions:
+            create_new: Pridať Competition
+            reorder: Preusporiadať Competitions
+            reorder_done: Koniec radenia Competitions
+          records:
+            title: Competitions
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Competitions. Kliknite na "Pridať Competition" pre pridanie prvého competition.
+          competition:
+            view_live_html: Zobraziť náhľad competition<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť competition
+            delete: Zmazať competition
+      competitions:
+        show:
+          other: Daľšie Competitions
+  activerecord:
+    attributes:
+      'refinery/competitions/competition':
+        title: Title
+        debut: Debut
+        fin: Fin
+        description: Description

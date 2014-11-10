@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      competitions:
+        title: Competitions
+    competitions:
+      admin:
+        competitions:
+          actions:
+            create_new: Nieuwe Competition toevoegen
+            reorder: De volgorde van de Competitions wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Competition-volgorde
+          records:
+            title: Competitions
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Competitions. Druk op 'Nieuwe Competition toevoegen' om de eerste toe te voegen.
+          competition:
+            view_live_html: Deze competition op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze competition
+            delete: Deze competition definitief verwijderen
+      competitions:
+        show:
+          other: Andere Competitions
+  activerecord:
+    attributes:
+      'refinery/competitions/competition':
+        title: Title
+        debut: Debut
+        fin: Fin
+        description: Description

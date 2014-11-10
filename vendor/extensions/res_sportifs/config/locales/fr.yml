@@ -1,0 +1,32 @@
+fr:
+  refinery:
+    plugins:
+      res_sportifs:
+        title: Res Sportifs
+    res_sportifs:
+      admin:
+        res_sportifs:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Res Sportif
+            reorder: Réordonner les Res Sportifs
+            reorder_done: Fin de réordonnancement des Res Sportifs
+          records:
+            title: Res Sportifs
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Res Sportif. Cliquer sur "Créer un(e) nouve(au/l/lle) Res Sportif" pour créer votre premi(er/ère) res sportif.'
+          res_sportif:
+            view_live_html: Voir ce(t/tte) res sportif <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) res sportif
+            delete: Supprimer définitivement ce(t/tte) res sportif
+      res_sportifs:
+        index:
+          list_all: Liste des résultats sportifs
+          class: Résultat sportif
+        show:
+          other: Autres résultats
+          list_all: Tous les résultats
+  activerecord:
+    attributes:
+      'refinery/res_sportifs/res_sportif':
+        titre: Titre
+        description: Description

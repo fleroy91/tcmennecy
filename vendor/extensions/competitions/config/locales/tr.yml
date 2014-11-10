@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      competitions:
+        title: Competitions
+    competitions:
+      admin:
+        competitions:
+          actions:
+            create_new: Yeni Ekle Competition
+            reorder: Tekrar sirala Competitions
+            reorder_done: Tekrar siralama tamamlandiCompetitions
+          records:
+            title: Competitions
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Competitions yok henuz.  Tikla "Yeni Ekle Competition" eklemek senin ilk competition.
+          competition:
+            view_live_html: Bunu canlu competition goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle competition
+            delete: Bunu Sil competition sonsuza dek
+      competitions:
+        show:
+          other: Diger Competitions
+  activerecord:
+    attributes:
+      'refinery/competitions/competition':
+        title: Title
+        debut: Debut
+        fin: Fin
+        description: Description

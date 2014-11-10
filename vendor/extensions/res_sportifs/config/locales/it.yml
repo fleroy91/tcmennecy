@@ -1,0 +1,28 @@
+it:
+  refinery:
+    plugins:
+      res_sportifs:
+        title: Res Sportifs
+    res_sportifs:
+      admin:
+        res_sportifs:
+          actions:
+            create_new: Aggiungi Nuovo Res Sportif
+            reorder: Riordina Res Sportifs
+            reorder_done: Termina il Riordino di Res Sportifs
+          records:
+            title: Res Sportifs
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Res Sportifs. Clicca "Aggiungi Nuovo Res Sportif" per aggiungere il tuo primo res sportif.
+          res_sportif:
+            view_live_html: Guarda live questo res sportif <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo res sportif
+            delete: Rimuovi per sempre questo res sportif
+      res_sportifs:
+        show:
+          other: Altri Res Sportifs
+  activerecord:
+    attributes:
+      'refinery/res_sportifs/res_sportif':
+        titre: Titre
+        description: Description

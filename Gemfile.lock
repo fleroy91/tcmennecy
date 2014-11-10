@@ -1,11 +1,15 @@
 PATH
   remote: vendor/extensions
   specs:
+    refinerycms-competitions (1.0)
+      refinerycms-core (~> 2.1.3)
     refinerycms-events (1.0)
       refinerycms-core (~> 2.1.3)
     refinerycms-galleries (1.0)
       refinerycms-core (~> 2.1.3)
     refinerycms-partenaires (1.0)
+      refinerycms-core (~> 2.1.3)
+    refinerycms-res_sportifs (1.0)
       refinerycms-core (~> 2.1.3)
     refinerycms-sliders (1.0)
       refinerycms-core (~> 2.1.3)
@@ -254,9 +258,11 @@ DEPENDENCIES
   rails (= 3.2.19)
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
+  refinerycms-competitions!
   refinerycms-events!
   refinerycms-galleries!
   refinerycms-partenaires!
+  refinerycms-res_sportifs!
   refinerycms-search (~> 2.1.0)
   refinerycms-sliders!
   sass-rails (~> 3.2.3)

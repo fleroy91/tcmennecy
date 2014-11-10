@@ -1,0 +1,29 @@
+es:
+  refinery:
+    plugins:
+      res_sportifs:
+        title: Res Sportifs
+#        article: masculino/femenino
+    res_sportifs:
+      admin:
+        res_sportifs:
+          actions:
+            create_new: Crear nuevo res sportif
+            reorder: Reordenar res sportifs
+            reorder_done: Reordenación de res sportifs completada
+          records:
+            title: Res Sportifs
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay res sportifs todavía. Pulsa en "Crear nuevo Res Sportif" para crear tu primer res sportif.
+          res_sportif:
+            view_live_html: Ver este res sportif como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este res sportif
+            delete: Borrar este res sportif para siempre
+      res_sportifs:
+        show:
+          other: Otros res sportifs
+  activerecord:
+    attributes:
+      'refinery/res_sportifs/res_sportif':
+        titre: Titre
+        description: Description

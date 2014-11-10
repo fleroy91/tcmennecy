@@ -19,8 +19,12 @@ fr:
             edit: Modifier ce(t/tte) event
             delete: Supprimer définitivement ce(t/tte) event
       events:
+        index:
+          list_all: Liste des événements
+          class: Evénement
         show:
-          other: Autres Events
+          other: Autres événements
+          list_all: Tous les événements
   activerecord:
     attributes:
       'refinery/events/event':

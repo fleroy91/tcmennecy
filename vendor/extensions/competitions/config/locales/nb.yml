@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      competitions:
+        title: Competitions
+    competitions:
+      admin:
+        competitions:
+          actions:
+            create_new: Lag en ny Competition
+            reorder: Endre rekkefølgen på Competitions
+            reorder_done: Ferdig å endre rekkefølgen Competitions
+          records:
+            title: Competitions
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Competitions enda. Klikk på "Lag en ny Competition" for å legge til din første competition.
+          competition:
+            view_live_html: Vis hvordan denne competition ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne competition
+            delete: Fjern denne competition permanent
+      competitions:
+        show:
+          other: Andre Competitions
+  activerecord:
+    attributes:
+      'refinery/competitions/competition':
+        title: Title
+        debut: Debut
+        fin: Fin
+        description: Description

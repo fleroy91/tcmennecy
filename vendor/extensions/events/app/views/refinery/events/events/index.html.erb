@@ -1,11 +1,42 @@
 <% content_for :body do %>
-  <ul id="events">
-    <% @events.each do |event| %>
-      <li>
-        <%= link_to event.title, refinery.events_event_path(event) %>
-      </li>
-    <% end %>
-  </ul>
+  <section id="content">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="box-shadow">
+          <div class="wrap block-2">
+            <div class="col-3">
+								<h1 id="body_content_title"><%= t('.list_all') %></h1>
+              </div>
+            <div class="col-4">
+            	<table class="table table-striped table-bordered">
+            		<thead>
+            			<tr>
+	            			<th>Le</th>
+	            			<th colspan=2><%= t('.class') %></th>
+	            			<th></th>
+            			</tr>
+            		</thead>
+            		<tbody>
+							    <% @events.each do |event| %>
+							    	<tr>
+								      <td><%=l event.date, format: :long %></td>
+								      <td><%= image_fu event.photo, "100x100" %></td>
+								      <td><%= link_to event.title, refinery.events_event_path(event) %></td>
+								      <td><%= link_to "Plus d'informations", refinery.events_event_path(event) %></td>
+								     </tr>
+							    <% end %>
+            		</tbody>
+            	</table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+	<% content_for :javascripts do %>
+	  <script>Cufon.now();</script>
+	<% end %>
 <% end %>
 
-<%= render '/refinery/content_page' %>
+<%= render '/refinery/content_page', :hide_sections => :body_content_title %>

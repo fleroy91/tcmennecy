@@ -23,3 +23,9 @@ Refinery::Galleries::Engine.load_seed
 
 # Added by Refinery CMS Partenaires extension
 Refinery::Partenaires::Engine.load_seed
+
+# Added by Refinery CMS Competitions extension
+Refinery::Competitions::Engine.load_seed
+
+# Added by Refinery CMS ResSportifs extension
+Refinery::ResSportifs::Engine.load_seed
