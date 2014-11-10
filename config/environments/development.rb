@@ -37,8 +37,8 @@ Tcmennecy::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
-  # ENV["S3_KEY"]     = "AKIAJW3P5HSAL4RIF76A"
-  # ENV["S3_SECRET"]  = "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"
-  # ENV["S3_BUCKET"]  = "tcmennecy"
-  # ENV["S3_REGION"]  = "eu-west-1"
+  ENV["S3_KEY"]     = "AKIAJW3P5HSAL4RIF76A"
+  ENV["S3_SECRET"]  = "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"
+  ENV["S3_BUCKET"]  = "tcmennecy"
+  ENV["S3_REGION"]  = "eu-west-1"
 end

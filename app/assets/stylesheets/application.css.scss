@@ -389,3 +389,31 @@ table th[class*="span"],
 .table-hover tbody tr.info:hover td {
   background-color: #c4e3f3;
 }
+h2 {
+  color:#01a5ca;
+}
+
+
+section#page table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+section#page table th,
+section#page table td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+}
+section#page table ul, section#page .col-4 ul {
+  padding-left: 20px;
+  list-style: inherit;
+}
+section#page nav ul, section#page ul.slidesjs-pagination {
+  padding-left: 0px;
+  list-style: none;
+}
