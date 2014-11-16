@@ -22,6 +22,8 @@
 //= require cufon-replace
 
 $(window).load(function(){
+  $("#header-subcontent").fadeIn('fast');
+  $("section#page").fadeIn('fast');
 	$('#slides1').slidesjs({
     width: 940,
     height: 280,
@@ -51,5 +53,4 @@ $(window).load(function(){
     e.stopPropagation();
     window.open("https://adoc.app.fft.fr/adoc/", "_blank");
   });
-  $("#header-subcontent").fadeIn('fast');
 })
