@@ -30,7 +30,7 @@ $(window).load(function(){
     play: {
       auto: true,
     	pauseOnHover: true,
-    	interval: 7000
+    	interval: 3500
     }
   });
 
@@ -42,7 +42,7 @@ $(window).load(function(){
     play: {
       auto: true,
     	pauseOnHover: true,
-    	interval: 3000
+    	interval: 2000
     }
   });
 
