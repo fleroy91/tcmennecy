@@ -46,9 +46,15 @@ $(window).load(function(){
     }
   });
 
-	nb_images = 4;
-	index = parseInt(Math.random() * nb_images) + 1;
-  $("body").css({
-  	"background-image": "url('/assets/fond" + index + ".jpeg')"
+  $("nav#menu ul li a[href='/reserver-un-court']").on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    window.open("https://adoc.app.fft.fr/adoc/", "_blank");
   });
+
+	// nb_images = 4;
+	// index = parseInt(Math.random() * nb_images) + 1;
+ //  $("body").css({
+ //  	"background-image": "url('/assets/fond" + index + ".jpeg')"
+ //  });
 })

@@ -8,10 +8,15 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require reset
  *= require refinery/formatting
  *= require refinery/theme
  *= require_self
- *= require_tree .
+ *= require grid_12
+ *= require style
+ *= require ie
+ *= require demo
+ *= require slider
  */
 
 @font-face {
@@ -32,6 +37,10 @@
   font-style: normal;
 }
 
+section#page {
+  margin-top: 255px;
+}
+
 #menu ul li a, .font-1, .font-2, .font-3, h2 {
   font-family: 'asapregular';
   font-weight: normal;
@@ -43,8 +52,8 @@
 
 #menu ul li {
   padding: 5px 10px;
-  border-bottom: 1px solid lightgrey;
-  background-color: rgba(1,165,202,0.1);
+  border-bottom: 3px solid white;
+  background-color: rgba(1,165,202,0.3);
   margin-left: 10px !important;
 }
 
