@@ -1,5 +1,9 @@
 <div id="header-image"></div>
-<h1 id='logo'>
-  <%= link_to "<strong style='font-size:50%;line-height:20px;margin-top: -12px;margin-bottom:-10px;'>Tennis Club de</strong>Mennecy".html_safe, refinery.root_path %>
-</h1>
-<%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+<div id="header-content">
+	<h1 id='logo'>
+	  <%= link_to "<strong style='font-size:50%;line-height:20px;margin-top: -12px;margin-bottom:-10px;'>Tennis Club de</strong>Mennecy".html_safe, refinery.root_path %>
+	</h1>
+	<div id="header-subcontent" style="display:none;">
+		<%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+	</div>
+</div>

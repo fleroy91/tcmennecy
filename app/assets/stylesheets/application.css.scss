@@ -13,10 +13,10 @@
  *= require refinery/theme
  *= require_self
  *= require grid_12
- *= require style
  *= require ie
  *= require demo
  *= require slider
+ *= require style
  */
 
 @font-face {
@@ -38,7 +38,11 @@
 }
 
 section#page {
-  margin-top: 255px;
+  margin-top: 360px;
+}
+
+h1 a {
+  font-family: 'asapregular';
 }
 
 #menu ul li a, .font-1, .font-2, .font-3, h2 {

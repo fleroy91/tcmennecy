@@ -51,10 +51,5 @@ $(window).load(function(){
     e.stopPropagation();
     window.open("https://adoc.app.fft.fr/adoc/", "_blank");
   });
-
-	// nb_images = 4;
-	// index = parseInt(Math.random() * nb_images) + 1;
- //  $("body").css({
- //  	"background-image": "url('/assets/fond" + index + ".jpeg')"
- //  });
+  $("#header-subcontent").fadeIn('fast');
 })
