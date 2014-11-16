@@ -3,7 +3,7 @@ html, body {
 	width:100%;
 	padding:0;
 	margin:0;
-	background-color: rgba(0,0,0,0.95);
+	background-color: white;
 }
 body {
 	font: 14px/25px Arial, Helvetica, sans-serif;
@@ -11,7 +11,7 @@ body {
 	min-width:960px;
 	background: center 0 repeat-y;
 	background-size: 100% auto;
-	border-top:#658F98 6px solid;
+	// border-top:#658F98 6px solid;
 	width: 100%;
 	height: 100%;
 	position:absolute;
@@ -204,17 +204,27 @@ ul.list-2 li a:hover {
 }
 /*********************************header*************************************/
 header {
+	top: 245px;
 	width:100%;
 	z-index:101;
 	position:relative;
-	overflow:hidden;
 	margin-bottom:17px;
 
-  background: black;
+  background: rgba(0,0,0,0.7);
   margin-left: -101%;
   padding-left: 100%;
   margin-right: -100%;
   padding-right: 100%;
+  height: 95px;
+}
+#header-image {
+	position: absolute;
+	background: image-url("fond2.jpeg") center center no-repeat;
+	background-size: 100% auto;
+	height: 260px;
+	top: -270px;
+	left: 0;
+	right: 0;
 }
 h1 {
 	float:left;
@@ -264,7 +274,7 @@ h1 a strong {
 }
 #menu ul {
 	float:right;
-	margin-top:10px;
+	margin-top:25px;
 }
 #menu ul li {
 	float:left;
@@ -272,16 +282,16 @@ h1 a strong {
 	margin:0px 0 0px 44px;
 }
 #menu ul li a {
-	font-size:17px;
+	font-size:15px;
 	line-height:22px;
-	color:#658F98;
+	color:white;
 	display:inline-block;
 }
 #menu ul li.selected {
 	border-bottom-color:#01a5ca;
 }
 #menu ul li a:hover, #menu ul li.selected a {
-	color:#01a5ca;
+	color:white;
 }
 // .side_menu ul {
 // 	float:right;
@@ -320,8 +330,11 @@ td a:hover {
 	color: #551A8B !important;
 }
 .box-shadow {
-	box-shadow: 0px 0px 5px #dbdbdb;
-	background: rgba(0,0,0,0.8);
+	// box-shadow: 0px 0px 5px #dbdbdb;
+	background: white;
+}
+.box-noshadow {
+	background: rgba(20,20,20,0.8);
 }
 .img-border {
 	border:#f4f4f4 5px solid;
@@ -409,8 +422,11 @@ footer {
 	overflow:hidden;
 	text-align:center;
 	padding:32px 0 45px 0;
+	// background: image-url("footer.jpeg") left center no-repeat;
+	background-size: auto 100%;
 }
 footer p {
+	// padding-left: 150px;
 	color:#c3c3c3;
 }
 /**********************form**********************/
