@@ -45,6 +45,12 @@ section#page {
 h1 a {
   font-family: 'asapregular';
 }
+ul li a {
+  color: #01A5CA;
+}
+ul li a:hover {
+  color: white;
+}
 
 #menu ul li a, .font-1, .font-2, .font-3, h2 {
   font-family: 'asapregular';

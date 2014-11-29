@@ -7,7 +7,7 @@ html, body {
 }
 body {
 	font: 14px/25px Arial, Helvetica, sans-serif;
-	color:#658F98;
+	color:#e5e5e5;
 	min-width:960px;
 	background: center 0 repeat-y;
 	background-size: 100% auto;
@@ -100,7 +100,7 @@ ul.list-1 li {
 }
 ul.list-1 li a {
 	font-size:14px;
-	color:#658F98;
+	color:#01A5CA;
 	line-height:25px;
 }
 ul.list-1 li a:hover {
@@ -207,7 +207,9 @@ ul.list-2 li a:hover {
 header {
 	top: 0px;
 	width:100%;
-	margin-left: -25%;
+	margin-left: auto;
+	left: 0;
+	right: 0;
 	z-index:101;
 	position:absolute;
 	margin-bottom:17px;
