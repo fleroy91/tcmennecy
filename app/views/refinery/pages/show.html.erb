@@ -5,10 +5,19 @@
         <div class="box-shadow">
           <div class="wrap block-2">
             <div class="col-3">
-                <%= presenter= SubMenuPresenter.new(sub_menu_pages(@page), self)
-                  presenter.css = "side_menu"
-                  presenter.dom_id = "side_menu"
-                  presenter.to_html %>
+              <nav class="side_menu" id="side_menu">
+                <% if @page.children.empty? then
+                    pages = [@page.parent].concat(@page.parent.children)
+                  else
+                    pages = [@page].concat(@page.children)
+                  end
+                %>
+                <ul>
+                <% pages.each_with_index do |page, index| %>
+                  <% infos = page.to_refinery_menu_item %>
+                  <li class="<%= page == @page ? "selected" : "" %>"><%= link_to infos[:title], infos[:url], class: "#{index == 0 ? "first" : (index == pages.size - 1 ? "last" : "")}" %></li>
+                <% end %>
+                </ul></nav>
                 <%=raw @page.content_for(:side_body) %>
                 &nbsp;
               </div>

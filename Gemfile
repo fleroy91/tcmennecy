@@ -29,6 +29,13 @@ gem 'jquery-rails'
 # Use unicorn as the app server
 gem 'unicorn'
 
+group :development, :test do
+  gem "byebug", ">= 2.7"
+  gem 'pry-byebug', ">= 1.3.2"
+  gem 'awesome_print'
+  gem 'pry-rails'
+end
+
 # Deploy with Capistrano
 # gem 'capistrano'
 
