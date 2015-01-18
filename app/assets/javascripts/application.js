@@ -32,7 +32,7 @@ $(window).load(function(){
     play: {
       auto: true,
     	pauseOnHover: true,
-    	interval: 3500
+    	interval: 5000
     }
   });
 
@@ -44,7 +44,7 @@ $(window).load(function(){
     play: {
       auto: true,
     	pauseOnHover: true,
-    	interval: 2000
+    	interval: 3000
     }
   });
 
