@@ -440,3 +440,19 @@ section#page nav ul, section#page ul.slidesjs-pagination {
   padding-left: 0px;
   list-style: none;
 }
+
+.col-4 strong {
+  color: rgb(1, 165, 202);
+}
+h3 {
+  color: rgb(1, 165, 202);
+  font-size: 150%;
+  margin-top: 17px;
+  font-family: asapregular;
+}
+.col-4 p img, .col-4 td img {
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  border: 1px solid yellow;
+}
