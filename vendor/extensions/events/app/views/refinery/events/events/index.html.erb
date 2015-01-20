@@ -20,7 +20,7 @@
 							    <% @events.each do |event| %>
 							    	<tr>
 								      <td><%=l event.date, format: :long %></td>
-								      <td><%= image_fu event.photo, "100x100" %></td>
+								      <td><%= image_fu event.photo, "100x100", style: "border-radius:0;border:0;" %></td>
 								      <td><%= link_to event.title, refinery.events_event_path(event) %></td>
 								      <td><%= link_to "Plus d'informations", refinery.events_event_path(event) %></td>
 								     </tr>
