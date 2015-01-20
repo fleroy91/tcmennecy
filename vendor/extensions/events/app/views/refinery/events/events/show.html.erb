@@ -21,7 +21,8 @@
             </div>
             <div class="col-4">
               <h2 class="color-1"><%= @event.title %></h2>
-              <h3>Le <%=l @event.date, format: :long %></h3>
+              <p><%=l @event.date, format: :long %></p>
+              <br/>
               <%= image_fu @event.photo, "590x450" %>
               <br/>
               <%= raw @event.blurb %>
