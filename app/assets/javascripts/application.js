@@ -48,14 +48,13 @@ $(window).load(function(){
     }
   });
 
-  $("nav#menu ul li a[href='/reserver-un-court']").on('click', function(e) {
+  bookCourt = function (e) {
     e.preventDefault();
     e.stopPropagation();
     window.open("https://adoc.app.fft.fr/adoc/", "_blank");
-  });
-  $("nav#menu ul li a[href='reserver-un-court/index.html']").on('click', function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    window.open("https://adoc.app.fft.fr/adoc/", "_blank");
-  });
+  }    ;
+
+  $("nav#menu ul li a[href='/reserver-un-court']").on('click', bookCourt);
+  $("nav#menu ul li a[href='reserver-un-court/index.html']").on('click', bookCourt);
+  $("nav#menu ul li a[href='../reserver-un-court/index.html']").on('click', bookCourt);
 })
