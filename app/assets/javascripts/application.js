@@ -54,7 +54,8 @@ $(window).load(function(){
     window.open("https://adoc.app.fft.fr/adoc/", "_blank");
   }    ;
 
-  $("nav#menu ul li a[href='/reserver-un-court']").on('click', bookCourt);
-  $("nav#menu ul li a[href='reserver-un-court/index.html']").on('click', bookCourt);
-  $("nav#menu ul li a[href='../reserver-un-court/index.html']").on('click', bookCourt);
+  $('nav#menu ul li a')
+    .filter(function() {
+      return this.href.match(/reserver-un-court/) && ! this.href.match(/comment/);
+    }).on('click', bookCourt);
 })
