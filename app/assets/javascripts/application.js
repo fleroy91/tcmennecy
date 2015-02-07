@@ -53,4 +53,9 @@ $(window).load(function(){
     e.stopPropagation();
     window.open("https://adoc.app.fft.fr/adoc/", "_blank");
   });
+  $("nav#menu ul li a[href='reserver-un-court/index.html']").on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    window.open("https://adoc.app.fft.fr/adoc/", "_blank");
+  });
 })
