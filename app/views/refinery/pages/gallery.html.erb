@@ -1,69 +1,30 @@
+<%= stylesheet_link_tag "/pgwslider.min.css", :cache => true %>
 
 <!--==============================content================================-->
   <section id="content">
+
     <div class="container_12">
-      <div class="grid_12">
-        <div id="slide">
-          <div class="gallery">
-            <ul class="items">
-              <% Refinery::Galleries::Gallery.where(a_afficher_grand: true).each do |gallery| %>
-                <li><%= image_fu gallery.photo, "940x415" %></li>
-              <% end %>
-            </ul>
-          </div>
-          <a href="#" class="prev"></a><a href="#" class="next"></a> </div>
-      </div>
-      <div class="grid_12 top-1">
-        <div class="block-3 box-shadow">
-          <h2 class="p4"><span class="color-1">Gallerie</span> photo</h2>
-          <div class="pag">
-            <div class="img-pags">
-              <ul style="left:0;">
-                <% Refinery::Galleries::Gallery.where(a_afficher_petit: true).each do |gallery| %>
-                  <li><a href="#"><span><%= image_fu gallery.photo, "190x140" %></span></a></li>
-                <% end %>
-                <% Refinery::Galleries::Gallery.where(a_afficher_petit: true).each do |gallery| %>
-                  <li><a href="#"><span><%= image_fu gallery.photo, "190x140" %></span></a></li>
-                <% end %>
-                <% Refinery::Galleries::Gallery.where(a_afficher_petit: true).each do |gallery| %>
-                  <li><a href="#"><span><%= image_fu gallery.photo, "190x140" %></span></a></li>
-                <% end %>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="clear"></div>
+      <ul class="pgwSlider">
+        <% Refinery::Galleries::Gallery.where(a_afficher_grand: true).each do |gallery| %>
+          <li><%= image_tag gallery.photo.url, alt: "#{gallery.titre}", height: "415px" %></li>
+        <% end %>
+      </ul>
     </div>
   </section>
 <% content_for :javascripts do %>
-  <%= javascript_include_tag "uCarousel" %>
+  <%= javascript_include_tag "pgwslider" %>
   <%= javascript_include_tag "tms-0.4.1" %>
   <script>Cufon.now();</script>
 <script>
 $(document)
     .ready(function () {
-    $('.gallery')
-        ._TMS({
-        show: 0,
-        pauseOnHover: true,
-        prevBu: '.prev',
-        nextBu: '.next',
-        playBu: '.play',
-        duration: 700,
-        preset: 'fade',
-        pagination: $('.img-pags')
-            .uCarousel({
-            show: 4,
-            shift: 0
-        }),
-        pagNums: false,
-        slideshow: 7000,
-        numStatus: true,
-        banners: false,
-        waitBannerAnimation: false,
-        progressBar: false
-    })
+     var pgwslider = $('.pgwSlider').pgwSlider({
+      adaptiveHeight: true,
+      listPosition: 'right',
+      selectionMode: 'mouseOver',
+      displayControls: true,
+      maxHeight: 415
+     });
 })
 </script>
 <!--[if lt IE 9]>
